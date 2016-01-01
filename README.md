@@ -1,2 +1,2 @@
-# New-Project-Boilerplate
-Personal boilerplate for launching new web projects.
+# practice-ecommerce
+Just as it sounds. Practice project building a responsive eCommerce website.
