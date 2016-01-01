@@ -1,0 +1,44 @@
+// *******************************************************
+// Name: Media Queries
+// Description: site wide, mobile first media queries
+// *******************************************************
+
+// Media Queries
+// -------------------------------------------------------
+
+
+// Breakpoint Variables
+// ---------------------------
+$breakpoint-xsm : 480px;
+$breakpoint-sm : 768px;
+$breakpoint-md : 992px;
+$breakpoint-lg : 1200px;
+
+
+// MQ (Media Query) Mixin
+// ---------------------------
+@mixin mq($point) {
+	@if $point == "xsm" {
+		@media (min-width: $breakpoint-xsm) {
+			@content;
+		}
+	}
+	@else if $point == "sm" {
+		@media (min-width: $breakpoint-sm) {
+			@content;
+		}
+	}
+	@else if $point == "md" {
+		@media (min-width: $breakpoint-md) {
+			@content;
+		}
+	}
+	@else if $point == "lg" {
+		@media (min-width: $breakpoint-lg) {
+			@content;
+		}
+	}
+	@else {
+   	@error "Whoops! No value could be retrieved for `#{$break}`. "
+  }
+}
