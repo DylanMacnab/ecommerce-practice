@@ -1139,6 +1139,11 @@ textarea {
 .row:after {
   clear: both; }
 
+.inner {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
 .clearfix:after {
   content: "";
   display: table;

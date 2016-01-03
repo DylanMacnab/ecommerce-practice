@@ -8,6 +8,16 @@
 // Layout Helpers
 // -------------------------------------------------------
 
+
+// Clearfix Hack
+// ---------------------------
+.inner {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
 // Clearfix Hack
 // ---------------------------
 .clearfix:after {
