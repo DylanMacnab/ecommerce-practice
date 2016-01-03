@@ -14,12 +14,9 @@
 
 // U T I L I T I E S: Grid System, Containers, Helpers
 // --------------------------------------------
-  @import "base/_media-queries";
+  @import "utilities/_media-queries";
   @import "utilities/_grid-system";  // Bootstrap 3
-  @import "utilities/_layout-helpers";
-  @import "utilities/_containers";
-  @import "utilities/_typeography";
-  @import "utilities/_misc-helpers";
+  @import "utilities/_helper-classes";
 
 
 // B L O C K S: Sections, reusable code, patterns
