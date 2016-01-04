@@ -12,7 +12,7 @@
 // ---------------------------
 
 .site-header {
-  padding: 20px 0;
+  padding: 15px 0;
   background: $brand-yellow;
   a {
     color: #333;
@@ -51,6 +51,7 @@
 
 .site-header__logo {
   margin-right: 30px;
+  padding-top: 5px;
   float: left;
 }
 
@@ -58,9 +59,8 @@
 // ---------------------------
 .site-header__search {
   height: 40px;
-  background: rgba(white, .4);
+  background: rgba(white, .3);
   line-height: 40px;
-  width: 50%;
   input {
     padding: 0 20px;
   }
@@ -71,12 +71,16 @@
   display: block;
   width: 50px;
   height: 50px;
-  background-size: 25px 25px;
+  background-size: 20px 20px;
 
 }
 
 // User Actions
 // ---------------------------
+
+.header__actions {
+  height: 40px;
+}
 
 .user-actions {
   display: flex;
@@ -90,4 +94,6 @@
 .actions__item a {
   display: flex; // flex & align center for spans
   align-items: center;
+  font-size: 12px;
+  font-weight: bold;
 }
