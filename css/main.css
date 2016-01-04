@@ -476,18 +476,18 @@ textarea {
   line-height: inherit; }
 
 ::-webkit-input-placeholder {
-  color: #444; }
+  color: #555; }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #444; }
+  color: #555; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #444; }
+  color: #555; }
 
 :-ms-input-placeholder {
-  color: #444; }
+  color: #555; }
 
 .row-no-padding [class*="col-"] {
   padding-left: 0 !important;
@@ -1410,3 +1410,31 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
 .btn-secondary--full {
   padding: 1rem 3rem;
   width: 100%; }
+
+.holiday-sale {
+  position: relative;
+  background: red;
+  padding: 4rem 0;
+  color: white; }
+  .holiday-sale:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50px);
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url("/images/shoe-heart.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+    background-color: red; }
+  .holiday-sale [class^="btn-"] {
+    margin-top: 15px;
+    color: white;
+    text-decoration: none; }
+
+.junk-offset {
+  margin-top: 100px; }

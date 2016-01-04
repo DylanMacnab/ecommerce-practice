@@ -12,6 +12,36 @@
 // ---------------------------
 
 .holiday-sale {
+  position: relative;
   background: red;
-  height: 1000px;
+  padding: 4rem 0;
+  color: white;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50px);
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url('/images/shoe-heart.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+    background-color: red;
+  }
+  [class^="btn-"] {
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+// Offset
+// ---------------------------
+
+.junk-offset {
+  margin-top: 100px;
 }
