@@ -12,10 +12,12 @@
 // ---------------------------
 
 .site-header {
+  position: fixed;
+  width: 100%;
   padding: 15px 0;
   background: $brand-yellow;
   a {
-    color: #333;
+    color: #222;
   }
   a:hover {
     color: red;
@@ -30,7 +32,7 @@
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-size: 25px 25px;
+  background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -51,7 +53,7 @@
 
 .site-header__logo {
   margin-right: 30px;
-  padding-top: 5px;
+  margin-left: 20px;
   float: left;
 }
 
@@ -61,8 +63,10 @@
   height: 40px;
   background: rgba(white, .3);
   line-height: 40px;
+  width: 400px;
   input {
     padding: 0 20px;
+    width: 300px;
   }
 }
 
@@ -72,6 +76,7 @@
   width: 50px;
   height: 50px;
   background-size: 20px 20px;
+  cursor: pointer;
 
 }
 
@@ -85,6 +90,7 @@
 .user-actions {
   display: flex;
   align-items: center;
+  text-align: right;
 }
 
 .actions__item {
@@ -94,6 +100,23 @@
 .actions__item a {
   display: flex; // flex & align center for spans
   align-items: center;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold;
+}
+
+
+// Main Navigation
+// ---------------------------
+
+.main-nav {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.main-nav__list {
+  padding-left: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
 }
