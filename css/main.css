@@ -420,7 +420,8 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: .5rem; }
+  margin-bottom: .5rem;
+  list-style: none; }
 
 ol ol,
 ul ul,
@@ -434,6 +435,11 @@ dt {
 dd {
   margin-bottom: .5rem;
   margin-left: 0; }
+
+hr {
+  margin: 10px 0 0 0;
+  border: none;
+  border-top: 1px solid #e4c601; }
 
 blockquote {
   margin: 0 0 1rem; }
@@ -466,8 +472,21 @@ select,
 textarea {
   margin: 0;
   outline: none;
-  max-width: 80%;
   line-height: inherit; }
+
+::-webkit-input-placeholder {
+  color: #655700; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: white; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white; }
+
+:-ms-input-placeholder {
+  color: white; }
 
 .row-no-padding [class*="col-"] {
   padding-left: 0 !important;
@@ -1192,6 +1211,10 @@ textarea {
     padding-left: 5px;
     padding-right: 5px; }
 
+.last-list-item {
+  margin-right: 0;
+  padding-right: 0; }
+
 .input-group {
   float: left; }
 
@@ -1209,18 +1232,40 @@ textarea {
   width: 1px; }
 
 .site-header {
-  padding: 20px 0;
+  padding: 15px 0;
   background: #fddc01; }
+  .site-header a {
+    color: #333; }
+  .site-header a:hover {
+    color: red;
+    text-decoration: none; }
+
+.site-header [class^="icon--"] {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.icon--location {
+  background: url("/images/svg/icon-location.svg"); }
+
+.icon--account {
+  background: url("/images/svg/icon-account.svg"); }
+
+.icon--cart {
+  background: url("/images/svg/icon-cart.svg"); }
 
 .site-header__logo {
   margin-right: 30px;
+  padding-top: 5px;
   float: left; }
 
 .site-header__search {
   height: 40px;
-  background: rgba(255, 255, 255, 0.4);
-  line-height: 40px;
-  width: 50%; }
+  background: rgba(255, 255, 255, 0.3);
+  line-height: 40px; }
   .site-header__search input {
     padding: 0 20px; }
 
@@ -1229,8 +1274,21 @@ textarea {
   display: block;
   width: 50px;
   height: 50px;
-  background-size: 25px 25px; }
+  background-size: 20px 20px; }
 
 .header__actions {
-  display: block;
-  height: 50px; }
+  height: 40px; }
+
+.user-actions {
+  display: flex;
+  align-items: center; }
+
+.actions__item {
+  margin-right: 20px;
+  text-transform: uppercase; }
+
+.actions__item a {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold; }
