@@ -13,29 +13,33 @@
 
 .holiday-sale {
   position: relative;
-  background: red;
+  background: white;
   padding: 4rem 0;
-  color: white;
+  color: red;
   &:before {
     content: "";
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%, -50px);
+    transform: translate(-50%, -130px);
     display: block;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-image: url('/images/shoe-heart.png');
+    height: 220px;
+    width: 220px;
+    background: url('/images/svg/holiday-forest.svg');
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70px 70px;
-    background-color: red;
+    background-position: center 0px;
+    background-size:200px 200px;
   }
   [class^="btn-"] {
     margin-top: 15px;
-    color: white;
+    color: red;
     text-decoration: none;
+    border-color: red;
+    &:hover {
+      border-color: red;
+      background: red;
+      color: white;
+    }
   }
 }
 

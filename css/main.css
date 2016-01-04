@@ -1331,7 +1331,7 @@ textarea {
   top: 100px;
   padding-top: 130px;
   height: 600px;
-  height: 80vh;
+  height: 95vh;
   background: url("/images/hero-bg-alt.jpg") center top;
   background-size: cover;
   color: white; }
@@ -1413,28 +1413,31 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
 
 .holiday-sale {
   position: relative;
-  background: red;
+  background: white;
   padding: 4rem 0;
-  color: white; }
+  color: red; }
   .holiday-sale:before {
     content: "";
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%, -50px);
+    transform: translate(-50%, -130px);
     display: block;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-image: url("/images/shoe-heart.png");
+    height: 220px;
+    width: 220px;
+    background: url("/images/svg/holiday-forest.svg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70px 70px;
-    background-color: red; }
+    background-position: center 0px;
+    background-size: 200px 200px; }
   .holiday-sale [class^="btn-"] {
     margin-top: 15px;
-    color: white;
-    text-decoration: none; }
+    color: red;
+    text-decoration: none;
+    border-color: red; }
+    .holiday-sale [class^="btn-"]:hover {
+      border-color: red;
+      background: red;
+      color: white; }
 
 .junk-offset {
   margin-top: 100px; }
