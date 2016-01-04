@@ -241,17 +241,17 @@ textarea {
 // Placeholder Text Styles
 
 ::-webkit-input-placeholder {
-   color: darken($brand-yellow, 30%);
+   color: #444;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: white;
+   color: #444;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: white;
+   color: #444;
 }
 
 :-ms-input-placeholder {
-   color: white;
+   color: #444;
 }
