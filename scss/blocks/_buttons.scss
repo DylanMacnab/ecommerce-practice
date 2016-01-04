@@ -85,3 +85,15 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
   padding: 1rem 3rem;
   width: 100%;
 }
+
+// Custom Buttons
+// -------------------------
+
+.btn--brand {
+  color: white;
+  background: $brand-yellow;
+  border: 1px solid $brand-yellow;
+  &:hover {
+    background: lighten($brand-yellow, 5%) !important;
+  }
+}

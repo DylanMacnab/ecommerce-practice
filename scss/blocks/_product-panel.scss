@@ -1,0 +1,92 @@
+// *******************************************************
+// Name: _product-panel.scss
+// Description: product panels for home page.
+// *******************************************************
+
+
+
+// Product Panel
+// -------------------------------------------------------
+
+// Basic Product Panel
+// ---------------------------
+
+.panel--shadow {
+  box-shadow: 0 0 5px rgba(black, .1);
+  overflow: hidden;
+}
+
+.product-image {
+  min-height: 400px;
+}
+
+.product-image__cta {
+  position: absolute;
+  left: 55%;
+  top: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  span:nth-of-type(1) {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $brand-blue;
+  }
+  span:nth-of-type(2) {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: lightblue;
+  }
+  span:nth-last-of-type(3) {
+  }
+}
+
+.product-image__line1 {
+  font-size: 4rem;
+  color: $brand-blue;
+}
+
+.product-image--boots {
+  background: url('/images/product-winter-boots.jpg') 30% center no-repeat;
+  background-size: 350px 350px;
+  height: 100%;
+}
+
+.product-billboard {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.product__smText {
+  display: block;
+  font-size: 2rem;
+  margin: 0;
+}
+.product__lgText {
+  display: block;
+  font-size: 5rem;
+}
+
+.product--woods {
+  background: url('/images/home-mountains.jpg') center no-repeat;
+  background-size: cover;
+  padding: 4rem;
+  min-height: 400px;
+}
+
+.product__arrow:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  background: url('/images/svg/arrow.svg') left no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  z-index: 9;
+}
