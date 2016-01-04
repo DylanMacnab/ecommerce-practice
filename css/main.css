@@ -1255,6 +1255,9 @@ textarea {
   position: absolute;
   width: 1px; }
 
+.mb-small {
+  margin-bottom: 15px; }
+
 .site-header {
   position: fixed;
   width: 100%;
@@ -1432,7 +1435,7 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
   overflow: hidden; }
 
 .product-image {
-  min-height: 400px; }
+  min-height: 500px; }
 
 .product-image__cta {
   position: absolute;
@@ -1462,6 +1465,26 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
   background-size: 350px 350px;
   height: 100%; }
 
+.product-image--hiking {
+  background: url("/images/prod-hiking-boots.jpg") 30% center no-repeat;
+  background-size: 380px 350px;
+  height: 100%; }
+
+.product-image--sandals {
+  background: url("/images/holiday-uneek.png") 30% center no-repeat;
+  background-size: 400px 350px;
+  height: 100%; }
+
+.product-image--city {
+  background: url("/images/prod-uptown-casual.jpg") 30% center no-repeat;
+  background-size: 400px 350px;
+  height: 100%; }
+
+.product-image--work {
+  background: url("/images/holiday-workboots.png") 30% center no-repeat;
+  background-size: 400px 350px;
+  height: 100%; }
+
 .product-billboard {
   text-align: center;
   text-transform: uppercase; }
@@ -1475,13 +1498,37 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
   display: block;
   font-size: 5rem; }
 
-.product--woods {
+.product--mount {
   background: url("/images/home-mountains.jpg") center no-repeat;
   background-size: cover;
   padding: 4rem;
-  min-height: 400px; }
+  min-height: 500px; }
 
-.product__arrow:after {
+.product--woods {
+  background: url("/images/home-trees.jpg") center no-repeat;
+  background-size: cover;
+  padding: 4rem;
+  min-height: 500px; }
+
+.product--city {
+  background: url("/images/holiday-home-city.jpg") center no-repeat;
+  background-size: cover;
+  padding: 4rem;
+  min-height: 500px; }
+
+.product--beach {
+  background: url("/images/home-beach.jpg") center no-repeat;
+  background-size: cover;
+  padding: 4rem;
+  min-height: 500px; }
+
+.product--work {
+  background: url("/images/home-utility.jpg") center no-repeat;
+  background-size: cover;
+  padding: 4rem;
+  min-height: 500px; }
+
+.product__arrow:after, .product__arrow--reverse:after {
   content: "";
   display: block;
   position: absolute;
@@ -1493,6 +1540,11 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
   height: 50px;
   width: 50px;
   z-index: 9; }
+
+.product__arrow--reverse:after {
+  left: auto;
+  right: 100%;
+  transform: translateY(-50%) rotate(180deg); }
 
 .holiday-sale {
   position: relative;
