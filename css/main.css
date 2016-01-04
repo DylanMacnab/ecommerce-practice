@@ -475,18 +475,18 @@ textarea {
   line-height: inherit; }
 
 ::-webkit-input-placeholder {
-  color: #655700; }
+  color: #444; }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: white; }
+  color: #444; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: white; }
+  color: #444; }
 
 :-ms-input-placeholder {
-  color: white; }
+  color: #444; }
 
 .row-no-padding [class*="col-"] {
   padding-left: 0 !important;
@@ -1212,8 +1212,8 @@ textarea {
     padding-right: 5px; }
 
 .last-list-item {
-  margin-right: 0;
-  padding-right: 0; }
+  margin-right: 0 !important;
+  padding-right: 0 !important; }
 
 .input-group {
   float: left; }
@@ -1232,10 +1232,12 @@ textarea {
   width: 1px; }
 
 .site-header {
+  position: fixed;
+  width: 100%;
   padding: 15px 0;
   background: #fddc01; }
   .site-header a {
-    color: #333; }
+    color: #222; }
   .site-header a:hover {
     color: red;
     text-decoration: none; }
@@ -1244,7 +1246,7 @@ textarea {
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-size: 25px 25px;
+  background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center; }
 
@@ -1259,29 +1261,33 @@ textarea {
 
 .site-header__logo {
   margin-right: 30px;
-  padding-top: 5px;
+  margin-left: 20px;
   float: left; }
 
 .site-header__search {
   height: 40px;
   background: rgba(255, 255, 255, 0.3);
-  line-height: 40px; }
+  line-height: 40px;
+  width: 400px; }
   .site-header__search input {
-    padding: 0 20px; }
+    padding: 0 20px;
+    width: 300px; }
 
 .search-icon {
   background: url("/images/svg/icon-search.svg") no-repeat center 40%;
   display: block;
   width: 50px;
   height: 50px;
-  background-size: 20px 20px; }
+  background-size: 20px 20px;
+  cursor: pointer; }
 
 .header__actions {
   height: 40px; }
 
 .user-actions {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  text-align: right; }
 
 .actions__item {
   margin-right: 20px;
@@ -1290,5 +1296,16 @@ textarea {
 .actions__item a {
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold; }
+
+.main-nav {
+  font-size: 16px;
+  font-weight: bold; }
+
+.main-nav__list {
+  padding-left: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between; }
