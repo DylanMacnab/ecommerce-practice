@@ -383,7 +383,7 @@ h1, h2, h3, h4, h5, h6,
   color: inherit; }
 
 h1, .h1 {
-  font-size: 36px; }
+  font-size: 56px; }
 
 h2, .h2 {
   font-size: 30px; }
@@ -439,7 +439,8 @@ dd {
 hr {
   margin: 10px 0 0 0;
   border: none;
-  border-top: 1px solid #e4c601; }
+  border-top: 1px solid #e4c601;
+  border-bottom: 1px solid #fee229; }
 
 blockquote {
   margin: 0 0 1rem; }
@@ -1164,6 +1165,11 @@ textarea {
 .row:after {
   clear: both; }
 
+.valign-middle {
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(0, 50%); }
+
 .inner {
   width: 80%;
   max-width: 1200px;
@@ -1200,6 +1206,15 @@ textarea {
 .text-nowrap {
   white-space: nowrap; }
 
+.text-bold {
+  font-weight: bold; }
+
+.text-normal {
+  font-weight: normal; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
 .list-unstyled, .list-inline {
   padding-left: 0;
   list-style: none; }
@@ -1235,11 +1250,12 @@ textarea {
   position: fixed;
   width: 100%;
   padding: 15px 0;
-  background: #fddc01; }
+  background: #fddc01;
+  z-index: 10; }
   .site-header a {
     color: #222; }
   .site-header a:hover {
-    color: red;
+    color: #7e6e00;
     text-decoration: none; }
 
 .site-header [class^="icon--"] {
@@ -1309,3 +1325,88 @@ textarea {
   margin-bottom: 0;
   display: flex;
   justify-content: space-between; }
+
+.hero {
+  position: relative;
+  top: 100px;
+  padding-top: 130px;
+  height: 600px;
+  height: 80vh;
+  background: url("/images/hero-bg-alt.jpg") center top;
+  background-size: cover;
+  color: white; }
+  .hero a {
+    text-decoration: none; }
+  .hero [class^="btn-secondary"] {
+    margin: 0 10px;
+    color: white;
+    font-weight: bold; }
+
+.hero__headline {
+  font-size: 4rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  letter-spacing: .2rem; }
+
+.hero__tagline {
+  display: block;
+  font-size: 1.5rem;
+  text-shadow: 0 0 5px black;
+  letter-spacing: .1rem;
+  margin-bottom: 3rem; }
+
+[class^="btn-"] {
+  transition: .3s; }
+
+a[class^="btn-primary"], button[class^="btn-primary"] {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  border: 2px solid white; }
+  a[class^="btn-primary"]:hover, button[class^="btn-primary"]:hover {
+    border: 2px solid white;
+    background-color: white; }
+
+.btn-primary--sm {
+  padding: .75rem 1.5rem;
+  font-size: .85rem;
+  text-transform: uppercase; }
+
+.btn-primary--md {
+  padding: 1rem 4rem; }
+
+.btn-primary--lg {
+  padding: 1rem 4rem;
+  font-size: 1.25rem; }
+
+.btn-primary--full {
+  padding: 1rem 4rem;
+  width: 100%;
+  font-size: 1rem; }
+
+a[class^="btn-secondary"], button[class^="btn-secondary"] {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  border: 2px solid white;
+  cursor: pointer; }
+  a[class^="btn-secondary"]:hover, button[class^="btn-secondary"]:hover {
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white; }
+
+.btn-secondary--sm {
+  padding: .75rem 1.5rem;
+  font-size: .85rem;
+  text-transform: uppercase; }
+
+.btn-secondary--md {
+  padding: 1rem 2rem;
+  font-size: 1.25rem; }
+
+.btn-secondary--lg {
+  padding: 1rem 4rem;
+  font-size: 1.25rem; }
+
+.btn-secondary--full {
+  padding: 1rem 3rem;
+  width: 100%; }
