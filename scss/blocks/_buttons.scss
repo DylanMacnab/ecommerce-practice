@@ -1,0 +1,87 @@
+// *******************************************************
+// Name: _example-block.scss
+// Description: Example description of a block.
+// *******************************************************
+
+
+
+// Buttons
+// -------------------------------------------------------
+
+// General Buttons ALLL Buttons
+// -------------------------
+[class^="btn-"] {
+  transition: .3s;
+}
+
+// Button Primary
+// -------------------------
+
+a[class^="btn-primary"], button[class^="btn-primary"] {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  border: 2px solid white;
+  &:hover {
+    border: 2px solid white;
+    background-color: lighten(white, 2%);
+  }
+}
+
+.btn-primary--sm {
+  padding: .75rem 1.5rem;
+  font-size: .85rem;
+  text-transform: uppercase;
+}
+
+.btn-primary--md {
+  padding: 1rem 4rem;
+}
+
+.btn-primary--lg {
+  padding: 1rem 4rem;
+  font-size: 1.25rem;
+}
+
+.btn-primary--full {
+  padding: 1rem 4rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+// Button Secondary
+// -------------------------
+
+a[class^="btn-secondary"], button[class^="btn-secondary"] {
+  display: inline-block;
+  background-color: rgba(white, .1);
+  text-align: center;
+  border: 2px solid white;
+  cursor: pointer;
+  &:hover {
+    border: 2px solid white;
+    background-color: rgba(white, .2);
+    color: white;
+  }
+}
+
+.btn-secondary--sm {
+  padding: .75rem 1.5rem;
+  font-size: .85rem;
+  text-transform: uppercase;
+}
+
+.btn-secondary--md {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+}
+
+.btn-secondary--lg {
+  padding: 1rem 4rem;
+  font-size: 1.25rem;
+}
+
+.btn-secondary--full {
+  padding: 1rem 3rem;
+  width: 100%;
+}
