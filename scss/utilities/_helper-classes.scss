@@ -9,6 +9,15 @@
 // -------------------------------------------------------
 
 
+// Vertical Align
+// ---------------------------
+.valign-middle {
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(0, 50%);
+}
+
+
 // Clearfix Hack
 // ---------------------------
 .inner {
@@ -52,6 +61,19 @@
 .text-justify        { text-align: justify; }
 .text-nowrap         { white-space: nowrap; }
 
+
+// Fonts and General Style
+// ---------------------------
+.text-bold {
+  font-weight: bold;
+}
+.text-normal {
+  font-weight: normal;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
 
 // Lists
 // ---------------------------
