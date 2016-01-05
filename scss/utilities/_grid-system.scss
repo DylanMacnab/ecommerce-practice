@@ -27,6 +27,12 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+.container-full {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -688,6 +694,8 @@
     margin-left: 0%;
   }
 }
+.container-full:before,
+.container-full:after,
 .clearfix:before,
 .clearfix:after,
 .container:before,
@@ -699,6 +707,9 @@
   content: " ";
   display: table;
 }
+
+.container-full:before,
+.container-full:after,
 .clearfix:after,
 .container:after,
 .container-fluid:after,

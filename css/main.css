@@ -499,6 +499,12 @@ textarea {
   padding-left: 15px;
   padding-right: 15px; }
 
+.container-full {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0; }
+
 @media (min-width: 768px) {
   .container {
     width: 750px; } }
@@ -1148,6 +1154,8 @@ textarea {
 
   .col-lg-offset-0 {
     margin-left: 0%; } }
+.container-full:before,
+.container-full:after,
 .clearfix:before,
 .clearfix:after,
 .container:before,
@@ -1159,6 +1167,8 @@ textarea {
   content: " ";
   display: table; }
 
+.container-full:before,
+.container-full:after,
 .clearfix:after,
 .container:after,
 .container-fluid:after,
@@ -1434,8 +1444,7 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
     background: #fee019 !important; }
 
 .panel--shadow {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  overflow: hidden; }
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
 
 .product-image {
   min-height: 500px; }
@@ -1608,12 +1617,74 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
 .tout__item--bags {
   background-image: url("/images/bags.jpg"); }
 
+.site-footer {
+  background: white;
+  padding: 2rem;
+  text-align: center; }
+  @media (min-width: 992px) {
+    .site-footer {
+      text-align: left; } }
+  .site-footer:hover {
+    cursor: pointer; }
+
+.footer__logo {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+  margin-bottom: 10px; }
+
+.footer-contact a {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 13px;
+  color: #203749; }
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 11px;
+  padding-left: 0;
+  padding-top: 5px;
+  margin-bottom: 0; }
+  .footer-links a {
+    color: #203749; }
+
+.footer__social-links {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 0 0; }
+  .footer__social-links > li {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .footer__social-links .facebook {
+    background-image: url("/images/svg/icon-facebook.svg"); }
+  .footer__social-links .twitter {
+    background-image: url("/images/svg/icon-twitter.svg"); }
+  .footer__social-links .instagram {
+    background-image: url("/images/svg/icon-instagram.svg"); }
+  .footer__social-links .pinterest {
+    background-image: url("/images/svg/icon-pinterest.svg"); }
+  .footer__social-links .youtube {
+    background-image: url("/images/svg/icon-youtube.svg"); }
+  @media (min-width: 992px) {
+    .footer__social-links {
+      padding-top: 0px; } }
+
 .holiday-sale {
   position: relative;
   background: url("/images/holiday-bg.jpg"), white;
-  padding: 4rem 0;
+  padding: 4rem 4rem;
   color: red;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #f0f0f0;
+  overflow: hidden; }
   .holiday-sale [class^="btn-"] {
     margin-top: 15px;
     color: red;
@@ -1625,29 +1696,37 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
       color: white; }
 
 .holiday__ribbons {
-  overflow: hidden; }
+  position: relative; }
   .holiday__ribbons:before {
     content: "";
     display: block;
     position: absolute;
-    left: 0;
+    left: -50px;
     top: 0;
     height: 100%;
-    width: 70px;
+    width: 50px;
     background: red;
     transform: skew(-45deg);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4); }
+    @media (min-width: 992px) {
+      .holiday__ribbons:before {
+        width: 70px;
+        left: 0; } }
   .holiday__ribbons:after {
     content: "";
     display: block;
     position: absolute;
-    right: 0;
+    right: -50px;
     top: 0;
     height: 100%;
-    width: 70px;
+    width: 50px;
     background: red;
     transform: skew(-45deg);
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4); }
+    @media (min-width: 992px) {
+      .holiday__ribbons:after {
+        width: 70px;
+        right: 0; } }
 
 .junk-offset {
   margin-top: 100px; }

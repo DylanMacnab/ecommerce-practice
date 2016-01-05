@@ -1,0 +1,82 @@
+// *******************************************************
+// Name: _site-footer.scss
+// Description: styles for main site footer
+// *******************************************************
+
+
+
+// Site Wide Footer
+// -------------------------------------------------------
+
+// Footer
+// ---------------------------
+
+.site-footer {
+  background: white;
+  padding: 2rem;
+  text-align: center;
+  @include mq(md) {
+    text-align: left;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// Footer Logo
+// ---------------------------
+
+.footer__logo {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.footer-contact a {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 13px;
+  color: $brand-blue;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 11px;
+  padding-left: 0;
+  padding-top: 5px;
+  margin-bottom: 0;
+  a {
+    color: $brand-blue;
+  }
+}
+
+// Social Links
+// ---------------------------
+
+.footer__social-links {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 0 0;
+  & > li {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .facebook { background-image: url('/images/svg/icon-facebook.svg'); }
+  .twitter { background-image: url('/images/svg/icon-twitter.svg'); }
+  .instagram { background-image: url('/images/svg/icon-instagram.svg'); }
+  .pinterest { background-image: url('/images/svg/icon-pinterest.svg'); }
+  .youtube { background-image: url('/images/svg/icon-youtube.svg'); }
+
+  @include mq(md) {
+    padding-top: 0px;
+  }
+}
