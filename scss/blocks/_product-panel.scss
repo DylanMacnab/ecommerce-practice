@@ -137,26 +137,42 @@
 
 
 .product__arrow:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-90deg);
+  height: 50px;
+  width: 50px;
+  z-index: 9;
+  background: url('/images/svg/arrow.svg') left no-repeat;
+  background-size: contain;
+
   @include mq(md) {
-    content: "";
-    display: block;
-    position: absolute;
     top: 50%;
     left: 100%;
     transform: translateY(-50%);
-    background: url('/images/svg/arrow.svg') left no-repeat;
-    background-size: contain;
-    height: 50px;
-    width: 50px;
-    z-index: 9;
   }
 }
 
 .product__arrow--reverse:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  right: 50%;
+  margin-right: -50px;
+  transform: translateX(-50%) rotate(-90deg);
+  height: 50px;
+  width: 50px;
+  z-index: 9;
+  background: url('/images/svg/arrow.svg') left no-repeat;
+  background-size: contain;
   @include mq(md) {
-    @extend .product__arrow:after;
-    left: auto;
+    margin-right: 0;
+    top: 50%;
     right: 100%;
-    transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(-180deg);
   }
 }
