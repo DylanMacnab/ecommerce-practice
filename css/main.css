@@ -1543,23 +1543,25 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
   padding: 4rem;
   min-height: 500px; }
 
-.product__arrow:after, .product__arrow--reverse:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  transform: translateY(-50%);
-  background: url("/images/svg/arrow.svg") left no-repeat;
-  background-size: contain;
-  height: 50px;
-  width: 50px;
-  z-index: 9; }
+@media (min-width: 992px) {
+  .product__arrow:after, .product__arrow--reverse:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    background: url("/images/svg/arrow.svg") left no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    z-index: 9; } }
 
-.product__arrow--reverse:after {
-  left: auto;
-  right: 100%;
-  transform: translateY(-50%) rotate(180deg); }
+@media (min-width: 992px) {
+  .product__arrow--reverse:after {
+    left: auto;
+    right: 100%;
+    transform: translateY(-50%) rotate(180deg); } }
 
 .tout-container {
   background: #203749;
