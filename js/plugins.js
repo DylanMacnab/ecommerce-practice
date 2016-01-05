@@ -22,6 +22,14 @@
 }());
 
 
-// Place any jQuery/helper plugins in here.
+// Plugins and Library Quick Code
 // ---------------------------------------------------
 // ---------------------------------------------------
+
+window.sr = ScrollReveal({
+  reset: true,
+  duration: 800,
+});
+
+sr.reveal('.tout-container .tout');
+//sr.reveal('.js-scrollReveal');
