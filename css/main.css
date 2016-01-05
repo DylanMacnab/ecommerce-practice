@@ -1502,7 +1502,10 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
 
 .product-billboard {
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .product__smText {
   display: block;
@@ -1577,8 +1580,8 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
     font-weight: bold;
     font-size: 1.25rem;
     color: #333; }
-  .tout:hover {
-    opacity: .95; }
+  .tout:hover .tout__label {
+    color: white; }
 
 .tout__label {
   position: absolute;
@@ -1586,7 +1589,8 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
   width: 100%;
   bottom: 0;
   padding: 1rem 0;
-  background: #fddc01; }
+  background: #fddc01;
+  transition: .2s; }
 
 [class^="tout__item--"] {
   display: block;

@@ -85,6 +85,10 @@
 .product-billboard {
   text-align: center;
   text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .product__smText {

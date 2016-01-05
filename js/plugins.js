@@ -28,8 +28,9 @@
 
 window.sr = ScrollReveal({
   reset: true,
-  duration: 800,
+  duration: 600,
+  delay: 200
 });
 
 sr.reveal('.tout-container .tout');
-//sr.reveal('.js-scrollReveal');
+sr.reveal('.js-scrollReveal');
