@@ -32,5 +32,7 @@ window.sr = ScrollReveal({
   delay: 200
 });
 
+
 sr.reveal('.tout-container .tout');
 sr.reveal('.js-scrollReveal');
+sr.reveal('.js-sr-delay', { reset: true, origin: "top", duration: 600, delay: 600, useDelay: "onload", distance: "20px", easing: "ease-in-out" });
