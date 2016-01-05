@@ -13,24 +13,24 @@
 
 .holiday-sale {
   position: relative;
-  background: white;
+  background: url('/images/holiday-bg.jpg'), white;
   padding: 4rem 0;
   color: red;
   box-shadow: 0 0 5px rgba(black, .1);
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -130px);
-    display: block;
-    height: 220px;
-    width: 220px;
-    background: url('/images/svg/holiday-forest.svg');
-    background-repeat: no-repeat;
-    background-position: center 0px;
-    background-size:200px 200px;
-  }
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 50%;
+  //   transform: translate(-50%, -130px);
+  //   display: block;
+  //   height: 220px;
+  //   width: 220px;
+  //   background: url('/images/svg/holiday-forest.svg');
+  //   background-repeat: no-repeat;
+  //   background-position: center 0px;
+  //   background-size:200px 200px;
+  // }
   [class^="btn-"] {
     margin-top: 15px;
     color: red;
@@ -41,6 +41,34 @@
       background: red;
       color: white;
     }
+  }
+}
+
+.holiday__ribbons {
+  overflow: hidden;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 70px;
+    background: red;
+    transform: skew(-45deg);
+    box-shadow: 0 0 10px rgba(black, .2);
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 70px;
+    background: red;
+    transform: skew(-45deg);
+    box-shadow: 0 0 7px rgba(black, .2);
   }
 }
 
