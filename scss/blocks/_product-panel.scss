@@ -49,6 +49,10 @@
   color: $brand-blue;
 }
 
+[class^="product-image--"] {
+  background: white;
+}
+
 .product-image--boots {
   background: url('/images/product-winter-boots.jpg') 30% center no-repeat;
   background-size: 350px 350px;
@@ -56,25 +60,25 @@
 }
 
 .product-image--hiking {
-  background: url('/images/prod-hiking-boots.jpg') 30% center no-repeat;
+  background: url('/images/prod-hiking-boots.jpg') 30% center no-repeat, white;
   background-size: 380px 350px;
   height: 100%;
 }
 
 .product-image--sandals {
-  background: url('/images/holiday-uneek.png') 30% center no-repeat;
+  background: url('/images/holiday-uneek.png') 30% center no-repeat, white;
   background-size: 400px 350px;
   height: 100%;
 }
 
 .product-image--city {
-  background: url('/images/prod-uptown-casual.jpg') 30% center no-repeat;
+  background: url('/images/prod-uptown-casual.jpg') 30% center no-repeat, white;
   background-size: 400px 350px;
   height: 100%;
 }
 
 .product-image--work {
-  background: url('/images/holiday-workboots.png') 30% center no-repeat;
+  background: url('/images/holiday-workboots.png') 30% center no-repeat, white;
   background-size: 400px 350px;
   height: 100%;
 }

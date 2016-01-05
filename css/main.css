@@ -1224,6 +1224,9 @@ textarea {
 .t-shadow {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.8); }
 
+.t-shadow-soft {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+
 .list-unstyled, .list-inline {
   padding-left: 0;
   list-style: none; }
@@ -1460,28 +1463,31 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
   font-size: 4rem;
   color: #203749; }
 
+[class^="product-image--"] {
+  background: white; }
+
 .product-image--boots {
   background: url("/images/product-winter-boots.jpg") 30% center no-repeat;
   background-size: 350px 350px;
   height: 100%; }
 
 .product-image--hiking {
-  background: url("/images/prod-hiking-boots.jpg") 30% center no-repeat;
+  background: url("/images/prod-hiking-boots.jpg") 30% center no-repeat, white;
   background-size: 380px 350px;
   height: 100%; }
 
 .product-image--sandals {
-  background: url("/images/holiday-uneek.png") 30% center no-repeat;
+  background: url("/images/holiday-uneek.png") 30% center no-repeat, white;
   background-size: 400px 350px;
   height: 100%; }
 
 .product-image--city {
-  background: url("/images/prod-uptown-casual.jpg") 30% center no-repeat;
+  background: url("/images/prod-uptown-casual.jpg") 30% center no-repeat, white;
   background-size: 400px 350px;
   height: 100%; }
 
 .product-image--work {
-  background: url("/images/holiday-workboots.png") 30% center no-repeat;
+  background: url("/images/holiday-workboots.png") 30% center no-repeat, white;
   background-size: 400px 350px;
   height: 100%; }
 
@@ -1546,25 +1552,68 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
   right: 100%;
   transform: translateY(-50%) rotate(180deg); }
 
+.tout-container {
+  background: #203749;
+  padding: 2rem 0 5rem; }
+
+.tout {
+  position: relative;
+  padding-top: 3rem;
+  width: 100%;
+  text-align: center;
+  cursor: pointer; }
+  .tout a {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #333; }
+  .tout:hover {
+    opacity: .95; }
+
+.tout__label {
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 0;
+  padding: 1rem 0;
+  background: #fddc01; }
+
+[class^="tout__item--"] {
+  display: block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 250px; }
+
+.tout__item--men {
+  background-image: url("/images/men.jpg"); }
+
+.tout__item--sale {
+  background-image: url("/images/sale.jpg"); }
+
+.tout__item--women {
+  background-image: url("/images/women.jpg"); }
+
+.tout__item--kids {
+  background-image: url("/images/kids.jpg"); }
+
+.tout__item--utility {
+  background-image: url("/images/utility.jpg"); }
+
+.tout__item--socks {
+  background-image: url("/images/lifestyle_27q8778.jpg"); }
+
+.tout__item--clothing {
+  background-image: url("/images/clothing.jpg"); }
+
+.tout__item--bags {
+  background-image: url("/images/bags.jpg"); }
+
 .holiday-sale {
   position: relative;
-  background: white;
+  background: url("/images/holiday-bg.jpg"), white;
   padding: 4rem 0;
   color: red;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
-  .holiday-sale:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -130px);
-    display: block;
-    height: 220px;
-    width: 220px;
-    background: url("/images/svg/holiday-forest.svg");
-    background-repeat: no-repeat;
-    background-position: center 0px;
-    background-size: 200px 200px; }
   .holiday-sale [class^="btn-"] {
     margin-top: 15px;
     color: red;
@@ -1574,6 +1623,31 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
       border-color: red;
       background: red;
       color: white; }
+
+.holiday__ribbons {
+  overflow: hidden; }
+  .holiday__ribbons:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 70px;
+    background: red;
+    transform: skew(-45deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  .holiday__ribbons:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 70px;
+    background: red;
+    transform: skew(-45deg);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
 
 .junk-offset {
   margin-top: 100px; }
