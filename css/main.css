@@ -1276,6 +1276,7 @@ textarea {
   width: 100%;
   padding: 15px 0;
   background: #fddc01;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   z-index: 10; }
   .site-header a {
     color: #222; }
