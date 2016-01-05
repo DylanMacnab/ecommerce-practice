@@ -39,7 +39,10 @@
 
 [class^="tout__item--"] {
   display: block;
-  background-position: center;
+  background-position: top;
+  @include mq(md) {
+    background-position: center;
+  }
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 250px;

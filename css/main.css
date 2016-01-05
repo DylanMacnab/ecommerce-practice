@@ -1590,10 +1590,13 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
 
 [class^="tout__item--"] {
   display: block;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 250px; }
+  @media (min-width: 992px) {
+    [class^="tout__item--"] {
+      background-position: center; } }
 
 .tout__item--men {
   background-image: url("/images/men.jpg"); }
@@ -1682,7 +1685,8 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
 .holiday-sale {
   position: relative;
   background: url("/images/holiday-bg.jpg"), white;
-  padding: 4rem 4rem;
+  background-position: center 70px;
+  padding: 4rem 6rem;
   color: red;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #f0f0f0;
