@@ -1235,7 +1235,7 @@ textarea {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.8); }
 
 .t-shadow-soft {
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
 
 .list-unstyled, .list-inline {
   padding-left: 0;
@@ -1618,10 +1618,17 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 250px; }
+  min-height: 175px; }
+  @media (min-width: 480px) {
+    [class^="tout__item--"] {
+      min-height: 200px; } }
+  @media (min-width: 768px) {
+    [class^="tout__item--"] {
+      min-height: 250px; } }
   @media (min-width: 992px) {
     [class^="tout__item--"] {
-      background-position: center; } }
+      background-position: center;
+      min-height: 275px; } }
 
 .tout__item--men {
   background-image: url("/images/men.jpg"); }
@@ -1709,21 +1716,16 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
 
 .holiday-sale {
   position: relative;
-  background: url("/images/holiday-bg-3.jpg"), white;
+  background: url("/images/holiday-bg-6.jpg"), white;
   background-position: center 70px;
   padding: 4rem 6rem;
-  color: red;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid #f0f0f0;
+  color: white;
   overflow: hidden; }
   .holiday-sale [class^="btn-"] {
     margin-top: 15px;
-    color: red;
-    text-decoration: none;
-    border-color: red; }
+    color: white;
+    text-decoration: none; }
     .holiday-sale [class^="btn-"]:hover {
-      border-color: red;
-      background: red;
       color: white; }
 
 .holiday__ribbons {
@@ -1736,9 +1738,9 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
     top: 0;
     height: 100%;
     width: 50px;
-    background: red;
+    background: linear-gradient(45deg, red, #cc0000);
     transform: skew(-45deg);
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3); }
     @media (min-width: 992px) {
       .holiday__ribbons:before {
         width: 70px;
@@ -1751,9 +1753,9 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
     top: 0;
     height: 100%;
     width: 50px;
-    background: red;
+    background: linear-gradient(45deg, #db0000, red);
     transform: skew(-45deg);
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3); }
     @media (min-width: 992px) {
       .holiday__ribbons:after {
         width: 70px;

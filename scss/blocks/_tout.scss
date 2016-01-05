@@ -43,12 +43,19 @@
 [class^="tout__item--"] {
   display: block;
   background-position: top;
-  @include mq(md) {
-    background-position: center;
-  }
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 250px;
+  min-height: 175px;
+  @include mq(xsm) {
+    min-height: 200px;
+  }
+  @include mq(sm) {
+    min-height: 250px;
+  }
+  @include mq(md) {
+    background-position: center;
+    min-height: 275px;
+  }
 }
 
 .tout__item--men { background-image: url('/images/men.jpg'); }

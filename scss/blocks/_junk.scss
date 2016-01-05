@@ -13,21 +13,16 @@
 
 .holiday-sale {
   position: relative;
-  background: url('/images/holiday-bg-3.jpg'), white;
+  background: url('/images/holiday-bg-6.jpg'), white;
   background-position: center 70px;
   padding: 4rem 6rem;
-  color: red;
-  box-shadow: 0 0 5px rgba(black, .1);
-  border-bottom: 1px solid #f0f0f0;
+  color: white;
   overflow: hidden;
   [class^="btn-"] {
     margin-top: 15px;
-    color: red;
+    color: white;
     text-decoration: none;
-    border-color: red;
     &:hover {
-      border-color: red;
-      background: red;
       color: white;
     }
   }
@@ -43,9 +38,9 @@
     top: 0;
     height: 100%;
     width: 50px;
-    background: red;
+    background: linear-gradient(45deg, red, darken(red, 10%));
     transform: skew(-45deg);
-    box-shadow: 0 0 7px rgba(black, .4);
+    box-shadow: 0 0 7px rgba(black, .3);
     @include mq(md) {
       width: 70px;
       left: 0;
@@ -59,9 +54,9 @@
     top: 0;
     height: 100%;
     width: 50px;
-    background: red;
+    background: linear-gradient(45deg, darken(red, 7%), red);
     transform: skew(-45deg);
-    box-shadow: 0 0 7px rgba(black, .4);
+    box-shadow: 0 0 7px rgba(black, .3);
     @include mq(md) {
       width: 70px;
       right: 0;
