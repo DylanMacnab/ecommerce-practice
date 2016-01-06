@@ -1401,7 +1401,10 @@ textarea {
       font-size: 1.5rem; } }
 
 [class^="btn-"] {
-  transition: .3s; }
+  transition: .3s;
+  border-radius: 3px; }
+  [class^="btn-"]:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
 
 a[class^="btn-primary"], button[class^="btn-primary"] {
   display: inline-block;

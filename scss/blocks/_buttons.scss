@@ -12,6 +12,10 @@
 // -------------------------
 [class^="btn-"] {
   transition: .3s;
+  border-radius: 3px;
+  &:hover {
+    box-shadow: 0 0 5px rgba(black, .2);
+  }
 }
 
 // Button Primary
