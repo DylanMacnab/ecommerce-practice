@@ -73,13 +73,18 @@
 }
 
 [class^="product-image--"] {
-  background: white;
+  background: transparent;
+  height: 100%;
 }
 
 .product-image--boots {
   background: url('/images/product-winter-boots.jpg') 20% 60% no-repeat;
   background-size: 250px 250px;
   height: 100%;
+  transition: .3s ease-in-out;
+  &:hover {
+    transform: translateY(-7px);
+  }
   @include mq(xsm) {
     background-size: 300px 300px;
   }
@@ -93,9 +98,13 @@
 }
 
 .product-image--hiking {
-  background: url('/images/prod-hiking-boots.jpg') 20% 60% no-repeat, white;
+  background: url('/images/prod-hiking-boots.jpg') 20% 60% no-repeat;
   background-size: 250px 210px;
   height: 100%;
+  transition: .3s ease-in-out;
+  &:hover {
+    transform: translateY(-7px);
+  }
   @include mq(xsm) {
     background-size: 300px 262px;
   }
@@ -109,9 +118,13 @@
 }
 
 .product-image--sandals {
-  background: url('/images/holiday-uneek.png') 20% 60% no-repeat, white;
+  background: url('/images/holiday-uneek.png') 20% 60% no-repeat;
   background-size: 250px 210px;
   height: 100%;
+  transition: .3s ease-in-out;
+  &:hover {
+    transform: translateY(-7px);
+  }
   @include mq(xsm) {
     background-size: 300px 262px;
   }
@@ -125,9 +138,13 @@
 }
 
 .product-image--city {
-  background: url('/images/prod-uptown-casual.jpg') 20% 60% no-repeat, white;
+  background: url('/images/prod-uptown-casual.jpg') 20% 60% no-repeat;
   background-size: 250px 210px;
   height: 100%;
+  transition: .3s ease-in-out;
+  &:hover {
+    transform: translateY(-7px);
+  }
   @include mq(xsm) {
     background-size: 300px 262px;
   }
@@ -140,9 +157,13 @@
   }
 }
 .product-image--work {
-  background: url('/images/holiday-workboots.png') 20% 60% no-repeat, white;
+  background: url('/images/holiday-workboots.png') 20% 60% no-repeat;
   background-size: 250px 210px;
   height: 100%;
+  transition: .3s ease-in-out;
+  &:hover {
+    transform: translateY(-7px);
+  }
   @include mq(xsm) {
     background-size: 300px 262px;
   }
