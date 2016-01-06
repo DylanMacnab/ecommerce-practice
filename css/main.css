@@ -1350,8 +1350,8 @@ textarea {
         max-width: 320px; } }
     @media (min-width: 992px) {
       .site-header__search input {
-        width: 40%;
-        max-width: 330px; } }
+        width: 60%;
+        max-width: 350px; } }
 
 .search-icon {
   background: url("/images/svg/icon-search.svg") no-repeat center 40%;
@@ -1418,6 +1418,7 @@ textarea {
     text-decoration: none; }
   .hero [class^="btn-secondary"] {
     margin: 0 10px;
+    text-decoration: none;
     color: white;
     font-weight: bold;
     min-width: 80%;
