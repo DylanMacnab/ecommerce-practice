@@ -34,15 +34,15 @@
     content: "";
     display: block;
     position: absolute;
-    left: -50px;
+    left: -60px;
     top: 0;
     height: 100%;
-    width: 50px;
+    width: 60px;
     background: linear-gradient(45deg, red, darken(red, 10%));
     transform: skew(-45deg);
     box-shadow: 0 0 7px rgba(black, .3);
     @include mq(md) {
-      width: 70px;
+      width: 80px;
       left: 0;
     }
   }
@@ -50,15 +50,15 @@
     content: "";
     display: block;
     position: absolute;
-    right: -50px;
+    right: -60px;
     top: 0;
     height: 100%;
-    width: 50px;
+    width: 60px;
     background: linear-gradient(45deg, darken(red, 7%), red);
     transform: skew(-45deg);
     box-shadow: 0 0 7px rgba(black, .3);
     @include mq(md) {
-      width: 70px;
+      width: 80px;
       right: 0;
     }
   }

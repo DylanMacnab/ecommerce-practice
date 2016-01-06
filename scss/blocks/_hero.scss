@@ -16,7 +16,7 @@
   top: 100px;
   padding-top: 130px;
   height: 600px;
-  height: 95vh;
+  height: 90vh;
   background: url('/images/hero-bg-alt.jpg') center top;
   background-size: cover;
   color: white;
@@ -27,19 +27,36 @@
     margin: 0 10px;
     color: white;
     font-weight: bold;
+    min-width: 80%;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px rgba(black, .8);
+    @include mq(sm) {
+      min-width: 60%;
+    }
+    @include mq(md) {
+      min-width: 150px;
+      max-width: 30%;
+    }
   }
 }
 
 // Clean up repetitive code
 .hero__headline {
-  font-size: 4rem;
+  font-size: 3rem;
+  padding-top: 20px;
   text-shadow: 0 0 10px rgba(black, .8);
   letter-spacing: .2rem;
+  @include mq(md) {
+    font-size: 4rem;
+  }
 }
 .hero__tagline {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   text-shadow: 0 0 5px rgba(black, 1);
   letter-spacing: .1rem;
   margin-bottom: 3rem;
+  @include mq(md) {
+    font-size: 1.5rem;
+  }
 }
