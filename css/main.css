@@ -1391,7 +1391,7 @@ textarea {
 
 .hero__tagline {
   display: block;
-  font-size: 1.15rem;
+  font-size: .9rem;
   text-shadow: 0 0 5px black;
   letter-spacing: .1rem;
   margin-bottom: 3rem; }
@@ -1467,26 +1467,52 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
 
 .product-image {
-  min-height: 500px; }
+  min-height: 350px; }
+  @media (min-width: 768px) {
+    .product-image {
+      min-height: 400px; } }
+  @media (min-width: 992px) {
+    .product-image {
+      min-height: 500px; } }
 
 .product-image__cta {
   position: absolute;
-  left: 55%;
+  right: 50px;
   top: 50px;
   text-transform: uppercase;
   text-align: center;
   line-height: 1; }
+  @media (min-width: 768px) {
+    .product-image__cta {
+      left: 40%;
+      top: 70px; } }
+  @media (min-width: 992px) {
+    .product-image__cta {
+      left: 55%;
+      top: 70px; } }
   .product-image__cta span:nth-of-type(1) {
     display: block;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #203749; }
+    @media (min-width: 768px) {
+      .product-image__cta span:nth-of-type(1) {
+        font-size: 1.5rem; } }
+    @media (min-width: 992px) {
+      .product-image__cta span:nth-of-type(1) {
+        font-size: 2rem; } }
   .product-image__cta span:nth-of-type(2) {
     display: block;
-    margin-bottom: 20px;
-    font-size: 3rem;
+    margin-bottom: 15px;
+    font-size: 2rem;
     font-weight: bold;
     color: lightblue; }
+    @media (min-width: 768px) {
+      .product-image__cta span:nth-of-type(2) {
+        font-size: 2.5rem; } }
+    @media (min-width: 992px) {
+      .product-image__cta span:nth-of-type(2) {
+        font-size: 3rem; } }
 
 .product-image__line1 {
   font-size: 4rem;
@@ -1496,29 +1522,79 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
   background: white; }
 
 .product-image--boots {
-  background: url("/images/product-winter-boots.jpg") 30% center no-repeat;
-  background-size: 350px 350px;
+  background: url("/images/product-winter-boots.jpg") 20% 60% no-repeat;
+  background-size: 250px 250px;
   height: 100%; }
+  @media (min-width: 480px) {
+    .product-image--boots {
+      background-size: 300px 300px; } }
+  @media (min-width: 768px) {
+    .product-image--boots {
+      background-size: 350px 350px; } }
+  @media (min-width: 992px) {
+    .product-image--boots {
+      background-size: 400px 400px;
+      background-position: 30%; } }
 
 .product-image--hiking {
-  background: url("/images/prod-hiking-boots.jpg") 30% center no-repeat, white;
-  background-size: 380px 350px;
+  background: url("/images/prod-hiking-boots.jpg") 20% 60% no-repeat, white;
+  background-size: 250px 210px;
   height: 100%; }
+  @media (min-width: 480px) {
+    .product-image--hiking {
+      background-size: 300px 262px; } }
+  @media (min-width: 768px) {
+    .product-image--hiking {
+      background-size: 350px 290px; } }
+  @media (min-width: 992px) {
+    .product-image--hiking {
+      background-size: 400px 350px;
+      background-position: 30%; } }
 
 .product-image--sandals {
-  background: url("/images/holiday-uneek.png") 30% center no-repeat, white;
-  background-size: 400px 350px;
+  background: url("/images/holiday-uneek.png") 20% 60% no-repeat, white;
+  background-size: 250px 210px;
   height: 100%; }
+  @media (min-width: 480px) {
+    .product-image--sandals {
+      background-size: 300px 262px; } }
+  @media (min-width: 768px) {
+    .product-image--sandals {
+      background-size: 350px 290px; } }
+  @media (min-width: 992px) {
+    .product-image--sandals {
+      background-size: 400px 350px;
+      background-position: 30%; } }
 
 .product-image--city {
-  background: url("/images/prod-uptown-casual.jpg") 30% center no-repeat, white;
-  background-size: 400px 350px;
+  background: url("/images/prod-uptown-casual.jpg") 20% 60% no-repeat, white;
+  background-size: 250px 210px;
   height: 100%; }
+  @media (min-width: 480px) {
+    .product-image--city {
+      background-size: 300px 262px; } }
+  @media (min-width: 768px) {
+    .product-image--city {
+      background-size: 350px 290px; } }
+  @media (min-width: 992px) {
+    .product-image--city {
+      background-size: 400px 350px;
+      background-position: 30%; } }
 
 .product-image--work {
-  background: url("/images/holiday-workboots.png") 30% center no-repeat, white;
-  background-size: 400px 350px;
+  background: url("/images/holiday-workboots.png") 20% 60% no-repeat, white;
+  background-size: 250px 210px;
   height: 100%; }
+  @media (min-width: 480px) {
+    .product-image--work {
+      background-size: 300px 262px; } }
+  @media (min-width: 768px) {
+    .product-image--work {
+      background-size: 350px 290px; } }
+  @media (min-width: 992px) {
+    .product-image--work {
+      background-size: 400px 350px;
+      background-position: 30%; } }
 
 .product-billboard {
   text-align: center;
@@ -1529,7 +1605,7 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
 
 .product__smText {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0; }
   @media (min-width: 992px) {
     .product__smText {
@@ -1537,7 +1613,10 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
 
 .product__lgText {
   display: block;
-  font-size: 4rem; }
+  font-size: 3rem; }
+  @media (min-width: 768px) {
+    .product__lgText {
+      font-size: 4rem; } }
   @media (min-width: 992px) {
     .product__lgText {
       font-size: 5rem; } }
