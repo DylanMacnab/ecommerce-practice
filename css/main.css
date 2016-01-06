@@ -1303,8 +1303,8 @@ textarea {
 
 .site-header__logo {
   margin-right: 30px;
-  margin-left: 20px;
-  float: left; }
+  float: left;
+  width: 170px; }
 
 .site-header__search {
   height: 40px;
@@ -1788,7 +1788,7 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 80px;
+  width: 120px;
   margin-bottom: 20px; }
 
 .footer-contact a {
