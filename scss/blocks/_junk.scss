@@ -1,0 +1,75 @@
+// *******************************************************
+// Name: _junk.scss
+// Description: find a place for these styles later.
+// *******************************************************
+
+
+
+// Junk
+// -------------------------------------------------------
+
+// Sub Junk
+// ---------------------------
+
+.holiday-sale {
+  position: relative;
+  background: url('../images/holiday-bg-6.jpg'), white;
+  background-position: center 70px;
+  padding: 4rem 6rem;
+  color: white;
+  overflow: hidden;
+  [class^="btn-"] {
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.holiday__ribbons {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -60px;
+    top: 0;
+    height: 100%;
+    width: 60px;
+    background: linear-gradient(45deg, red, darken(red, 10%));
+    transform: skew(-45deg);
+    box-shadow: 0 0 7px rgba(black, .3);
+    @include mq(md) {
+      width: 80px;
+      left: 0;
+    }
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -60px;
+    top: 0;
+    height: 100%;
+    width: 60px;
+    background: linear-gradient(45deg, darken(red, 7%), red);
+    transform: skew(-45deg);
+    box-shadow: 0 0 7px rgba(black, .3);
+    @include mq(md) {
+      width: 80px;
+      right: 0;
+    }
+  }
+}
+
+// Offset
+// ---------------------------
+
+.junk-offset {
+  margin-top: 50px;
+  @include mq(md) {
+    margin-top: 100px;
+  }
+}

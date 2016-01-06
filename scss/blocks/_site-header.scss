@@ -1,0 +1,266 @@
+// *******************************************************
+// Name: _site-header.scss
+// Description: Main site header styles
+// *******************************************************
+
+
+
+// Main Site Header
+// -------------------------------------------------------
+
+// Site Header
+// ---------------------------
+
+.nav1 {
+  display: relative;
+}
+
+.site-header {
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  background: $brand-yellow;
+  box-shadow: 0 0 5px rgba(black, .2);
+  z-index: 10;
+  a {
+    color: #222;
+  }
+  a:hover {
+    color: darken($brand-yellow, 25%);
+    text-decoration: none;
+  }
+}
+
+
+// Icons
+// ---------------------------
+.site-header [class^="icon--"] {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon--location {
+  background: url('../images/svg/icon-location.svg');
+}
+.icon--account {
+  background: url('../images/svg/icon-account.svg');
+}
+.icon--cart {
+  background: url('../images/svg/icon-cart.svg');
+}
+
+
+// Logo
+// ---------------------------
+
+.site-header__logo {
+  margin-right: 30px;
+  float: left;
+  width: 90px;
+  @include mq(md) {
+    width: 170px;
+  }
+}
+
+// Search
+// ---------------------------
+.site-header__search {
+  width: calc(100% - 120px);
+  height: 40px;
+  background: rgba(white, .35);
+  line-height: 40px;
+  float: right;
+
+  @include mq(sm) {
+    float: left;
+    width: 30%;
+    max-width: 200px;
+    width: 30%;
+    max-width: 400px;
+  }
+  @include mq(md) {
+    width: 40%;
+    max-width: 400px;
+  }
+  &:hover {
+    background: rgba(white, .45);
+    box-shadow: 0 0 5px rgba(black, .1);
+  }
+  input {
+    width: calc(100% - 70px);
+    padding: 0 10px 0 20px;
+    @include mq(sm) {
+      max-width: 320px;
+    }
+    @include mq(md) {
+      width: 60%;
+      max-width: 350px;
+    }
+  }
+}
+
+.search-icon {
+  background: url('../images/svg/icon-search.svg') no-repeat center 40%;
+  display: block;
+  width: 40px;
+  height: 50px;
+  background-size: 20px 20px;
+  cursor: pointer;
+
+}
+
+// User Actions
+// ---------------------------
+
+.header__actions {
+  height: 40px;
+}
+
+.user-actions {
+  display: none;
+  @include mq(sm) {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    padding-left: 0;
+  }
+}
+
+.actions__item {
+  margin-right: 15px;
+  text-transform: uppercase;
+}
+.actions__item a {
+  display: flex; // flex & align center for spans
+  align-items: center;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+
+// Main Navigation
+// ---------------------------
+
+.main-nav {
+  font-size: 14px;
+  font-weight: bold;
+  @include mq(md) {
+    font-size: 16px;
+  }
+}
+
+.main-nav__list {
+  padding-left: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+// Nav Sub
+// ---------------------------
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav2 {
+  width: 100%;
+  position: absolute;
+  top: -700px;
+  margin-top: 10px;
+  background: url('../images/wood-bg.jpg'), $brand-blue;
+  padding: 3rem 0;
+  padding-right: 120px;
+  box-shadow: 0 5px 5px rgba(black, .5);
+  line-height: 1.9;
+  padding-left: 0;
+  z-index: 9;
+  &.open {
+    top: 100px;
+    transition: .4s;
+    animation: slide-down .3s forwards ease-in-out;
+  }
+}
+.nav2-inner {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 90%;
+  //bottom: 100%;
+  color: white;
+  padding-left: 0;
+  @include mq(md) {
+    width: 80%;
+  }
+  ul:first-of-type {
+    padding-left: 0;
+  }
+}
+
+.nav2__title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(white, .5);
+  text-transform: uppercase;
+  font-size: 12px;
+  color: darken($brand-yellow, 7%);
+  letter-spacing: .1rem;
+}
+
+.nav2__item {
+  font-size: 13px;
+  a {
+    color: rgba(white, .8);
+  }
+}
+
+.nav2-close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  height: 50px;
+  width: 50px;
+  display: block;
+  background: rgba(black, .2);
+  border-radius: 50%;
+  transition: .3s;
+  cursor: pointer;
+  &:hover {
+    background: rgba(black, .35);
+  }
+  .one {
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    height: 3px;
+    width: 40px;
+    transform: rotate(45deg);
+    background: $brand-yellow;
+    display: block;
+    border-radius: 2px;
+  }
+  .two {
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    height: 3px;
+    width: 40px;
+    transform: rotate(-45deg);
+    background: $brand-yellow;
+    display: block;
+    border-radius: 2px;
+  }
+}

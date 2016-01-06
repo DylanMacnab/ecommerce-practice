@@ -1,0 +1,74 @@
+// *******************************************************
+// Name: _tout.scss
+// Description: tout cards for links to store sections
+// *******************************************************
+
+
+
+// Category
+// -------------------------------------------------------
+
+.tout-container {
+  background: url('../images/wood-bg.jpg'), $brand-blue;
+  padding: 2rem 0 5rem;
+}
+.tout {
+  position: relative;
+  padding-top: 3rem;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  a {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  &:hover {
+    .tout__label {
+      color: white;
+    }
+  }
+}
+
+.tout__label {
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 0;
+  padding: 1rem 0;
+  background: $brand-yellow;
+  transition: .2s;
+}
+
+[class^="tout__item--"] {
+  display: block;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 175px;
+  @include mq(xsm) {
+    min-height: 200px;
+  }
+  @include mq(sm) {
+    min-height: 250px;
+  }
+  @include mq(md) {
+    background-position: center;
+    min-height: 275px;
+  }
+}
+
+.tout__item--men { background-image: url('../images/men.jpg'); }
+.tout__item--sale { background-image: url('../images/sale.jpg'); }
+.tout__item--women { background-image: url('../images/women.jpg'); }
+.tout__item--kids { background-image: url('../images/kids.jpg'); }
+.tout__item--utility { background-image: url('../images/utility.jpg'); }
+.tout__item--socks { background-image: url('../images/lifestyle_27q8778.jpg'); }
+.tout__item--clothing { background-image: url('../images/clothing.jpg'); }
+.tout__item--bags { background-image: url('../images/bags.jpg'); }
+
+
+// Sub-category
+// ---------------------------
+
+// Use extra comments as needed for clarification

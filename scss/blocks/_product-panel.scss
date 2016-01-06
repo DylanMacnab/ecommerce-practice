@@ -1,0 +1,280 @@
+// *******************************************************
+// Name: _product-panel.scss
+// Description: product panels for home page.
+// *******************************************************
+
+
+
+// Product Panel
+// -------------------------------------------------------
+
+// Basic Product Panel
+// ---------------------------
+
+.panel--shadow {
+  box-shadow: 0 0 5px rgba(black, .1);
+}
+
+.product-image {
+  min-height: 350px;
+  @include mq(sm) {
+    min-height: 400px;
+  }
+  @include mq(md) {
+    min-height: 500px;
+  }
+}
+
+.product-image__cta {
+  position: absolute;
+  right: 50px ;
+  top: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  @include mq(sm) {
+    left: 40%;
+    top: 70px;
+  }
+  @include mq(md) {
+    left: 55%;
+    top: 70px;
+  }
+  span:nth-of-type(1) {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: $brand-blue;
+    @include mq(sm) {
+      font-size: 1.5rem;
+    }
+    @include mq(md) {
+      font-size: 2rem;
+    }
+  }
+  span:nth-of-type(2) {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: lightblue;
+    @include mq(sm) {
+      font-size: 2.5rem;
+    }
+    @include mq(md) {
+      font-size: 3rem;
+    }
+  }
+}
+
+.product-image__line1 {
+  font-size: 4rem;
+  color: $brand-blue;
+}
+
+[class^="product-image--"] {
+  background: transparent;
+  height: 100%;
+}
+
+.product-image--boots {
+  background: url('../images/product-winter-boots.jpg') 20% 60% no-repeat;
+  background-size: 250px 250px;
+  height: 100%;
+  transition: .3s ease-in-out;
+  &:hover {
+    transform: translateY(-7px);
+  }
+  @include mq(xsm) {
+    background-size: 300px 300px;
+  }
+  @include mq(sm) {
+    background-size: 350px 350px;
+  }
+  @include mq(md) {
+    background-size: 400px 400px;
+    background-position: 30%;
+  }
+}
+
+.product-image--hiking {
+  background: url('../images/prod-hiking-boots.jpg') 20% 60% no-repeat;
+  background-size: 250px 210px;
+  height: 100%;
+  transition: .3s ease-in-out;
+  &:hover {
+    transform: translateY(-7px);
+  }
+  @include mq(xsm) {
+    background-size: 300px 262px;
+  }
+  @include mq(sm) {
+    background-size: 350px 290px;
+  }
+  @include mq(md) {
+    background-size: 400px 350px;
+    background-position: 30%;
+  }
+}
+
+.product-image--sandals {
+  background: url('../images/holiday-uneek.png') 20% 60% no-repeat;
+  background-size: 250px 210px;
+  height: 100%;
+  transition: .3s ease-in-out;
+  &:hover {
+    transform: translateY(-7px);
+  }
+  @include mq(xsm) {
+    background-size: 300px 262px;
+  }
+  @include mq(sm) {
+    background-size: 350px 290px;
+  }
+  @include mq(md) {
+    background-size: 400px 350px;
+    background-position: 30%;
+  }
+}
+
+.product-image--city {
+  background: url('../images/prod-uptown-casual.jpg') 20% 60% no-repeat;
+  background-size: 250px 210px;
+  height: 100%;
+  transition: .3s ease-in-out;
+  &:hover {
+    transform: translateY(-7px);
+  }
+  @include mq(xsm) {
+    background-size: 300px 262px;
+  }
+  @include mq(sm) {
+    background-size: 350px 290px;
+  }
+  @include mq(md) {
+    background-size: 400px 350px;
+    background-position: 30%;
+  }
+}
+ .product-image--work {
+  background: url('../images/holiday-workboots.png') 20% 60% no-repeat;
+  background-size: 250px 210px;
+  height: 100%;
+  transition: .3s ease-in-out;
+  &:hover {
+    transform: translateY(-7px);
+  }
+  @include mq(xsm) {
+    background-size: 300px 262px;
+  }
+  @include mq(sm) {
+    background-size: 350px 290px;
+  }
+  @include mq(md) {
+    background-size: 400px 350px;
+    background-position: 30%;
+  }
+}
+.product-billboard {
+  text-align: center;
+  text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.product__smText {
+  display: block;
+  font-size: 1.2rem;
+  margin: 0;
+  @include mq(md) {
+    font-size: 2rem;
+  }
+}
+.product__lgText {
+  display: block;
+  font-size: 3rem;
+  @include mq(sm) {
+    font-size: 4rem;
+  }
+  @include mq(md) {
+    font-size: 5rem;
+  }
+}
+
+.product--mount {
+  background: url('../images/home-mountains.jpg') center no-repeat;
+  background-size: cover;
+  padding: 4rem;
+  min-height: 500px;
+}
+.product--woods {
+  background: url('../images/home-trees.jpg') center no-repeat;
+  background-size: cover;
+  padding: 4rem;
+  min-height: 500px;
+}
+
+.product--city {
+  background: url('../images/holiday-home-city.jpg') center no-repeat;
+  background-size: cover;
+  padding: 4rem;
+  min-height: 500px;
+}
+
+.product--beach {
+  background: url('../images/home-beach.jpg') center no-repeat;
+  background-size: cover;
+  padding: 4rem;
+  min-height: 500px;
+}
+
+.product--work {
+  background: url('../images/home-utility.jpg') center no-repeat;
+  background-size: cover;
+  padding: 4rem;
+  min-height: 500px;
+}
+
+
+.product__arrow:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-90deg);
+  height: 50px;
+  width: 50px;
+  z-index: 9;
+  background: url('../images/svg/arrow.svg') left no-repeat;
+  background-size: contain;
+
+  @include mq(md) {
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+  }
+}
+
+.product__arrow--reverse:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  right: 50%;
+  margin-right: -50px;
+  transform: translateX(-50%) rotate(-90deg);
+  height: 50px;
+  width: 50px;
+  z-index: 9;
+  background: url('../images/svg/arrow.svg') left no-repeat;
+  background-size: contain;
+  @include mq(md) {
+    margin-right: 0;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%) rotate(-180deg);
+  }
+}
