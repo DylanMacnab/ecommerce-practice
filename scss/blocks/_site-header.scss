@@ -11,6 +11,10 @@
 // Site Header
 // ---------------------------
 
+.nav1 {
+  display: relative;
+}
+
 .site-header {
   position: fixed;
   width: 100%;
@@ -155,4 +159,108 @@
   margin-bottom: 0;
   display: flex;
   justify-content: space-between;
+}
+
+// Nav Sub
+// ---------------------------
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav2 {
+  width: 100%;
+  position: absolute;
+  top: -700px;
+  margin-top: 10px;
+  background: url('/images/wood-bg.jpg'), $brand-blue;
+  padding: 3rem 0;
+  padding-right: 120px;
+  box-shadow: 0 5px 5px rgba(black, .5);
+  line-height: 1.9;
+  padding-left: 0;
+  z-index: 9;
+  &.open {
+    top: 100px;
+    transition: .4s;
+    animation: slide-down .3s forwards ease-in-out;
+  }
+}
+.nav2-inner {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 90%;
+  //bottom: 100%;
+  color: white;
+  padding-left: 0;
+  @include mq(md) {
+    width: 80%;
+  }
+  ul:first-of-type {
+    padding-left: 0;
+  }
+}
+
+.nav2__title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(white, .5);
+  text-transform: uppercase;
+  font-size: 12px;
+  color: darken($brand-yellow, 7%);
+  letter-spacing: .1rem;
+}
+
+.nav2__item {
+  font-size: 13px;
+  a {
+    color: rgba(white, .8);
+  }
+}
+
+.nav2-close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  height: 50px;
+  width: 50px;
+  display: block;
+  background: rgba(black, .2);
+  border-radius: 50%;
+  transition: .3s;
+  cursor: pointer;
+  &:hover {
+    background: rgba(black, .35);
+  }
+  .one {
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    height: 3px;
+    width: 40px;
+    transform: rotate(45deg);
+    background: $brand-yellow;
+    display: block;
+    border-radius: 2px;
+  }
+  .two {
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    height: 3px;
+    width: 40px;
+    transform: rotate(-45deg);
+    background: $brand-yellow;
+    display: block;
+    border-radius: 2px;
+  }
 }
