@@ -21,12 +21,30 @@
 }
 
 
-// Clearfix Hack
+// Inner Container (header only)
 // ---------------------------
 .inner {
-  width: 80%;
-  max-width: 1200px;
+  width: 95%;
   margin: 0 auto;
+  @include mq(sm) {
+    width: 95%;
+  }
+  @include mq(md) {
+    width: 90%;
+    max-width: 1200px;
+  }
+  @include mq(lg) {
+    width: 80%;
+  }
+}
+
+
+// Hide on mobile
+// ---------------------------
+.hide-mobile {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 

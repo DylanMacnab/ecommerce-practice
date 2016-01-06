@@ -13,7 +13,7 @@
 
 .site-footer {
   background: white;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
   @include mq(md) {
     text-align: left;
@@ -35,21 +35,33 @@
   margin-bottom: 20px;
 }
 
+.footer-contact {
+  margin-top: 20px;
+  @include mq(md) {
+    margin-top: 5px;
+  }
+}
 .footer-contact a {
   font-weight: bold;
   margin-right: 10px;
-  font-size: 13px;
+  font-size: 12px;
   color: $brand-blue;
+  @include mq(sm) {
+    font-size: 13px;
+  }
 }
 
 .footer-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-size: 11px;
+  font-size: 9px;
   padding-left: 0;
   padding-top: 5px;
   margin-bottom: 0;
+  @include mq(sm) {
+    font-size: 11px;
+  }
   a {
     color: $brand-blue;
   }

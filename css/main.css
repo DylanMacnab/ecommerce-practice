@@ -1184,9 +1184,22 @@ textarea {
   transform: translate(-50%, -50%); }
 
 .inner {
-  width: 80%;
-  max-width: 1200px;
+  width: 95%;
   margin: 0 auto; }
+  @media (min-width: 768px) {
+    .inner {
+      width: 95%; } }
+  @media (min-width: 992px) {
+    .inner {
+      width: 90%;
+      max-width: 1200px; } }
+  @media (min-width: 1200px) {
+    .inner {
+      width: 80%; } }
+
+@media screen and (max-width: 768px) {
+  .hide-mobile {
+    display: none; } }
 
 .clearfix:after {
   content: "";
@@ -1304,24 +1317,46 @@ textarea {
 .site-header__logo {
   margin-right: 30px;
   float: left;
-  width: 170px; }
+  width: 90px; }
+  @media (min-width: 992px) {
+    .site-header__logo {
+      width: 170px; } }
 
 .site-header__search {
+  width: calc(100% - 120px);
   height: 40px;
   background: rgba(255, 255, 255, 0.35);
   line-height: 40px;
-  width: 400px; }
+  float: right; }
+  @media (min-width: 768px) {
+    .site-header__search {
+      float: left;
+      width: 30%;
+      max-width: 200px;
+      width: 30%;
+      max-width: 400px; } }
+  @media (min-width: 992px) {
+    .site-header__search {
+      width: 40%;
+      max-width: 400px; } }
   .site-header__search:hover {
     background: rgba(255, 255, 255, 0.45);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
   .site-header__search input {
-    padding: 0 20px;
-    width: 300px; }
+    width: calc(100% - 70px);
+    padding: 0 10px 0 20px; }
+    @media (min-width: 768px) {
+      .site-header__search input {
+        max-width: 320px; } }
+    @media (min-width: 992px) {
+      .site-header__search input {
+        width: 40%;
+        max-width: 330px; } }
 
 .search-icon {
   background: url("/images/svg/icon-search.svg") no-repeat center 40%;
   display: block;
-  width: 50px;
+  width: 40px;
   height: 50px;
   background-size: 20px 20px;
   cursor: pointer; }
@@ -1330,12 +1365,16 @@ textarea {
   height: 40px; }
 
 .user-actions {
-  display: flex;
-  align-items: center;
-  text-align: right; }
+  display: none; }
+  @media (min-width: 768px) {
+    .user-actions {
+      display: flex;
+      align-items: center;
+      text-align: right;
+      padding-left: 0; } }
 
 .actions__item {
-  margin-right: 20px;
+  margin-right: 15px;
   text-transform: uppercase; }
 
 .actions__item a {
@@ -1345,8 +1384,11 @@ textarea {
   font-weight: bold; }
 
 .main-nav {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold; }
+  @media (min-width: 992px) {
+    .main-nav {
+      font-size: 16px; } }
 
 .main-nav__list {
   padding-left: 0;
@@ -1357,14 +1399,22 @@ textarea {
 
 .hero {
   position: relative;
-  top: 100px;
-  padding-top: 130px;
+  top: 50px;
+  padding-top: 50px;
   height: 600px;
   height: 90vh;
   background: url("/images/hero-bg-alt.jpg") center top;
   background-size: cover;
   color: white; }
-  .hero a {
+  @media (min-width: 768px) {
+    .hero {
+      padding-top: 100px; } }
+  @media (min-width: 992px) {
+    .hero {
+      padding-top: 130px;
+      top: 100px; } }
+  .hero po
+  a {
     text-decoration: none; }
   .hero [class^="btn-secondary"] {
     margin: 0 10px;
@@ -1778,7 +1828,7 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
 
 .site-footer {
   background: white;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center; }
   @media (min-width: 992px) {
     .site-footer {
@@ -1794,20 +1844,32 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
   width: 120px;
   margin-bottom: 20px; }
 
+.footer-contact {
+  margin-top: 20px; }
+  @media (min-width: 992px) {
+    .footer-contact {
+      margin-top: 5px; } }
+
 .footer-contact a {
   font-weight: bold;
   margin-right: 10px;
-  font-size: 13px;
+  font-size: 12px;
   color: #203749; }
+  @media (min-width: 768px) {
+    .footer-contact a {
+      font-size: 13px; } }
 
 .footer-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-size: 11px;
+  font-size: 9px;
   padding-left: 0;
   padding-top: 5px;
   margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .footer-links {
+      font-size: 11px; } }
   .footer-links a {
     color: #203749; }
 
@@ -1884,4 +1946,7 @@ a[class^="btn-secondary"], button[class^="btn-secondary"] {
         right: 0; } }
 
 .junk-offset {
-  margin-top: 100px; }
+  margin-top: 50px; }
+  @media (min-width: 992px) {
+    .junk-offset {
+      margin-top: 100px; } }
